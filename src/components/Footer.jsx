@@ -8,6 +8,7 @@ import {
   FaGithub,
   FaMapMarkerAlt,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -26,26 +27,33 @@ const Footer = () => {
         </div>
         <div className="flex flex-col space-y-3">
           <h3 className="text-lg font-bold">Quick Links</h3>
-          {[
-            "Home",
-            "About",
-            "Services",
-            "Portfolio",
-            "Careers",
-            "Blog",
-            "FAQs",
-            "Contact",
-            "Privacy Policy",
-            "Terms",
-          ].map((link, index) => (
-            <a
-              key={index}
-              href="#"
-              className="text-gray-400 hover:text-blue-400 transition-all duration-300"
-            >
-              {link}
-            </a>
-          ))}
+          <ul>
+            <Link to="/">
+              <li className="text-xl text-gray-300  hover:text-blue-400">
+                Home
+              </li>
+            </Link>
+            <Link to="/about">
+              <li className="text-lg text-gray-300 hover:text-blue-400">
+                About
+              </li>
+            </Link>
+            <Link to="/service">
+              <li className="text-lg text-gray-300 hover:text-blue-400">
+                Service
+              </li>
+            </Link>
+            <Link to="/contact">
+              <li className="text-lg text-gray-300 hover:text-blue-400">
+                Contact
+              </li>
+            </Link>
+            <Link to="/portfolio">
+              <li className="text-lg text-gray-300 hover:text-blue-400">
+                Portfolio
+              </li>
+            </Link>
+          </ul>
         </div>
         <div>
           <h3 className="text-lg font-bold flex items-center gap-2">

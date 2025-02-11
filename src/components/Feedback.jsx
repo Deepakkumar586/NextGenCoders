@@ -42,7 +42,7 @@ const Feedback = () => {
           {feedbacks.map((feedback, index) => (
             <div
               key={index}
-              className="bg-white p-6 rounded-xl shadow-lg transition-transform duration-300 transform hover:scale-105 hover:shadow-2xl border border-gray-700 hover:border-blue-500"
+              className="bg-white p-6 rounded-xl shadow-lg transition-transform duration-300 transform  hover:scale-105 hover:shadow-2xl border-2 border-x border-gray-700 hover:border-blue-500"
             >
               <p className="text-md text-gray-600 italic">"{feedback.feedback}"</p>
               <div className="mt-4 flex justify-center gap-1 text-yellow-400">

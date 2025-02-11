@@ -31,6 +31,12 @@ const Navbar = () => {
           >
             Contact
           </Link>
+          <Link
+            to="/portfolio"
+            className="text-white text-lg hover:text-gray-300 transition"
+          >
+            Portfolio
+          </Link>
         </ul>
       </div>
     </nav>
